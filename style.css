@@ -1,0 +1,168 @@
+/* Whole page */
+body {
+  margin: 0;
+  background-color: #0b0f17;
+  color: #e6edf3;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #121826;
+  border-bottom: 1px solid #243049;
+}
+
+.logo {
+  color: #39ff88;
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: #8b98a9;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #39ff88;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+h1 {
+  font-size: 44px;
+  color: #39ff88;
+  margin: 10px 0;
+}
+
+.greeting,
+.subtitle {
+  color: #8b98a9;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+/* Sections */
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  color: #22d3ee;
+}
+
+/* Cards (used for assignments AND travel) */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  background-color: #121826;
+  border: 1px solid #243049;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.card:hover {
+  border-color: #39ff88;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Travel stamp button */
+.stamp-btn {
+  background-color: transparent;
+  color: #39ff88;
+  border: 1px solid #39ff88;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* JavaScript adds this class when a card is stamped */
+.stamped {
+  border: 2px solid #39ff88;
+}
+
+.stamped .stamp-btn {
+  background-color: #39ff88;
+  color: #0b0f17;
+}
+
+.credit {
+  font-size: 12px;
+  color: #8b98a9;
+}
+
+/* Careers list */
+.career-list li {
+  margin-bottom: 10px;
+}
+
+/* Link buttons */
+.button {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 12px 24px;
+  color: #39ff88;
+  border: 1px solid #39ff88;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #39ff88;
+  color: #0b0f17;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #8b98a9;
+  border-top: 1px solid #243049;
+}
+
+/* Phones: stack the nav links */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
